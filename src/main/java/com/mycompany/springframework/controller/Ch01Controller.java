@@ -15,11 +15,11 @@ import lombok.extern.slf4j.Slf4j;
 		//private static final Logger LOGGER = LoggerFactory.getLogger(Ch01Controller.class);
 	
 		@RequestMapping("/content")
-			public String content(String chNum, Model model) {
+			public String content(Model model) {
 			//LOGGER.info("content() 실행");
 			log.info("content() 실행");
 			
-			model.addAttribute("chNum", chNum);
+			model.addAttribute("chNum", "ch01");
 			return "ch01/content";
 	}
 		
